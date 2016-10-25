@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="agenda_azure.Page1">
+
+
+  <StackLayout Orientation="Horizontal">
+
+  </StackLayout>
+
+  <StackLayout>
+  <Grid  VerticalOptions="Start" HorizontalOptions="Center">
+    <Label x:Name="titulo11"  Grid.Row="0" Grid.ColumnSpan="2"  Grid.Column="0" Text="AGENDA" FontSize="35" TextColor="White"   />
+
+    <Entry x:Name="nombre1"  Grid.ColumnSpan="2" Placeholder="NOMBRE" FontSize="14" PlaceholderColor="Red" Grid.Row="1" Grid.Column="0"/>
+
+    <Entry x:Name="apellido1"   Grid.ColumnSpan="2" Placeholder="APELLIDO" FontSize="14" PlaceholderColor="Red" Grid.Row="2" Grid.Column="0"/>
+
+    <Entry x:Name="telefono1"  Grid.ColumnSpan="2" Placeholder="TELEFONO" FontSize="14" PlaceholderColor="Red" Grid.Row="3" Grid.Column="0"/>
+
+    <Button Text="Guardar" Clicked="enviardatos" Grid.Row="4" Grid.Column="0"/>
+
+    <Button Text="Consultar"   Clicked="mostrardatos" Grid.Row="5" Grid.Column="1"/>
+
+    <Button Text="Actualizar" Clicked="actualizardatos" Grid.Row="4" Grid.Column="1"/>
+
+    <Button Text="Eliminar"  Clicked="eliminardatos"  Grid.Row="5" Grid.Column="0"/>  
+      
+
+     <ListView x:Name="lista" SeparatorVisibility="Default" SeparatorColor="Blue" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2">
+  
+     </ListView>
+      <ListView x:Name="lista2" SeparatorVisibility="Default" SeparatorColor="Blue" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2"></ListView>
+
+
+  </Grid>
+</StackLayout>
+
+</ContentPage>

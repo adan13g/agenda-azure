@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="agenda_azure.Page2">
+  <StackLayout>
+  <ListView x:Name="lista" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2"></ListView>
+  <ListView x:Name="lista2"  Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"></ListView>
+  </StackLayout>
+</ContentPage>
